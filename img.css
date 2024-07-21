@@ -498,6 +498,8 @@ h5 {
     .nav .menu a {
         display: none;
     }
+    body{
+        overflow-x:hidden;
 
     .menu1 {
         display: flex;
