@@ -567,4 +567,30 @@ h5 {
     .skillbox:hover {
         transform: translateY(5vh);
     }
+        
+    .box1 {
+        height: 100px;
+        width: 200px;
+        left: 15%;
+    }
+
+    .box2 {
+        height: 100px;
+        width: 200px;
+        top: 30%;
+        left: 18%;
+    }
+
+    .box3 {
+        height: 100px;
+        width: 200px;
+        top: 10%;
+        right: 8%;
+    }
+
+    .box4 {
+        height: 100px;
+        width: 200px;
+        right: 15%;
+    }
 }
