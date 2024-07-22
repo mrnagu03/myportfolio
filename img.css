@@ -541,12 +541,13 @@ h5 {
     }
 
     h5 {
-        font-size: 3vw;
+        font-size: 4.5vw;
+        color:orange;
 
     }
 
     #main img {
-        left: 50%;
+        left: 60%;
     }
 
     .skillboxes {
@@ -596,7 +597,7 @@ h5 {
     .box3 {
         height: 100px;
         width: 200px;
-        top: 10%;
+        top: 14%;
         right: 8%;
     }
 
