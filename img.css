@@ -567,6 +567,10 @@ h5 {
     .skillbox:hover {
         transform: translateY(5vh);
     }
+    .page3{
+        max-height:100%;
+        padding:20px 0px;
+    }    
         
     .box1 {
         height: 100px;
