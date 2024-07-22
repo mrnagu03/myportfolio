@@ -570,7 +570,15 @@ h5 {
     .page3{
         height:30%;
         padding:10px 0px;
-    }    
+    }  
+        
+    #progress-bar-container li .step-inner {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        font-size: 10px;
+    }
+
         
     .box1 {
         height: 100px;
