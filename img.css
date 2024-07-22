@@ -167,6 +167,25 @@ h5 {
 .menu1 {
     display: none;
 }
+.menu1 i {
+    position: absolute;
+    right: 10px;
+    top: 5%;
+    font-size: 4vw;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.menu1 a {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
 
 .menu a::after {
     content: "";
@@ -182,6 +201,23 @@ h5 {
 
 .menu a:hover::after {
     width: 100%;
+
+}
+.menu1 a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+
+    background: rgb(18, 18, 18);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all ease 0.5s;
+}
+
+.menu1 a:hover::after {
+    width: 100%;
+
 
 }
 
@@ -239,7 +275,8 @@ h5 {
 .page4 h1 {
     color: #333;
     font-weight: 700;
-    margin-top: 125px;
+    position: relative;
+    top: 5vh;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -525,6 +562,11 @@ h5 {
         font-weight: 900;
 
     }
+           .menu i {
+        display: flex;
+        color: #fff;
+        cursor: pointer;
+    }
 
     #main img:hover {
         z-index: 999;
@@ -570,7 +612,7 @@ h5 {
     }
     .page3{
         height:30%;
-        padding:10px 0px;
+        
     }  
         
     #progress-bar-container li .step-inner {
@@ -579,7 +621,42 @@ h5 {
         bottom: 0;
         font-size: 10px;
     }
+.page4 h1 {
+        color: #333;
+        font-weight: 700;
+        position: relative;
+        top: 15vh;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        line-height: 23px;
+    }
+            #progress-bar-container li .step-inner {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        font-size: 10px;
+    }
 
+    #progress-bar-container li:after {
+        margin-top: 40%;
+    }
+
+    #progress-bar-container ul {
+        margin-top: 10%;
+    }
+
+    #progress-content-section {
+        margin-top: 10%;
+    }
+
+    #progress-bar-container #line {
+        margin-top: 18%;
+    }
+
+    .step-inner {
+        color: #fff;
+    }
         
     .box1 {
         height: 100px;
