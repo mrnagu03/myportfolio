@@ -17,7 +17,7 @@ img.addEventListener("mouseenter", () => {
     logo.style.backgroundImage = "url(logo2.jpg)";
     logo.style.transition = "0.5s";
     background.style.transition = "0.5s";
-     mesg.style.display = "none";
+    mesg.style.display = "none";
     creat.style.color = "black";
     menu.style.color = "black";
 
@@ -31,10 +31,17 @@ img.addEventListener("mouseleave", () => {
     background.style.backgroundColor = "black";
     logo.style.backgroundImage = "url(logo1.jpg)";
     logo.style.transition = "0.5s";
+    mesg.style.display = "inline";
     background.style.transition = "0.5s";
-     menu.style.color = "#ffff";
+    menu.style.color = "#ffff";
 
 })
+
+let a1 = document.querySelector(".a1");
+let a2 = document.querySelector(".a2");
+let a3 = document.querySelector(".a3");
+let a4 = document.querySelector(".a4");
+let a5 = document.querySelector(".a5");
 
 
 let tl = gsap.timeline()
@@ -63,8 +70,6 @@ menu1.addEventListener("click", () => {
 })
 
 
-
-
 gsap.to(".page3 .text2", {
     transform: "translateX(-180%)",
     scrollTrigger: {
@@ -72,9 +77,9 @@ gsap.to(".page3 .text2", {
         scroller: "body",
         start: "top 0%",
         end: "top -100%",
-        marker: true,
+        pin: true,
         scrub: 2,
-        pin: true
+
 
     }
 })
