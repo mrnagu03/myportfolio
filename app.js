@@ -1,7 +1,8 @@
 let title = document.querySelector(".name");
 let img = document.querySelector(".photo");
 let portfolio = document.querySelector(".port");
-let menu = document.querySelector(".menu1");
+let menu1 = document.querySelector(".menu1 i");
+let menu = document.querySelector(".menu i");
 let creat = document.querySelector(".crate");
 let logo = document.querySelector(".logo");
 let info = document.querySelector(".info");
@@ -31,12 +32,35 @@ img.addEventListener("mouseleave", () => {
     logo.style.backgroundImage = "url(logo1.jpg)";
     logo.style.transition = "0.5s";
     background.style.transition = "0.5s";
+     menu.style.color = "#ffff";
 
 })
-menu.addEventListener("click", () => {
-    menu.classList.toggle("active");
+
+
+let tl = gsap.timeline()
+tl.from(".menu1", {
+    x: 300,
+    duration: 0.6
+
 })
-let skils = document.querySelector(".page2");
+tl.from(".menu1 a", {
+    x: 150,
+    duration: 0.3,
+    opacity: 0,
+    stagger: 0.2
+})
+tl.pause();
+
+menu.addEventListener("click", () => {
+    tl.play();
+
+})
+
+
+
+menu1.addEventListener("click", () => {
+    tl.reverse();
+})
 
 
 
