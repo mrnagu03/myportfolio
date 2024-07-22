@@ -568,8 +568,8 @@ h5 {
         transform: translateY(5vh);
     }
     .page3{
-        max-height:100%;
-        padding:20px 0px;
+        height:30%;
+        padding:10px 0px;
     }    
         
     .box1 {
