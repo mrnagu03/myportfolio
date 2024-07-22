@@ -53,6 +53,53 @@ body {
 
 }
 
+.menu1 {
+    height: 300%;
+    width: 40%;
+    background: #bbaaaac9;
+    position: absolute;
+
+    z-index: 1000;
+    top: 35%;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.menu i {
+    display: none;
+}
+
+.menu i:hover {
+    color: #2ea3b7;
+}
+
+.menu1 {
+    display: none;
+}
+
+.menu1 i {
+    position: absolute;
+    right: 10px;
+    top: 5%;
+    font-size: 4vw;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.menu1 a {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
 #main img {
     height: 210px;
     width: 378px;
@@ -108,6 +155,7 @@ body {
 #main .full {
     position: absolute;
     bottom: 20%;
+    display: none;
     color: aliceblue;
     font-family: cursive;
     font-weight: 300;
@@ -164,28 +212,7 @@ h5 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.menu1 {
-    display: none;
-}
-.menu1 i {
-    position: absolute;
-    right: 10px;
-    top: 5%;
-    font-size: 4vw;
-    cursor: pointer;
-    color: #fff;
 
-}
-
-.menu1 a {
-    position: relative;
-    margin-top: 30px;
-    margin-left: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-}
 
 .menu a::after {
     content: "";
@@ -203,6 +230,7 @@ h5 {
     width: 100%;
 
 }
+
 .menu1 a::after {
     content: "";
     width: 0;
@@ -299,13 +327,20 @@ h5 {
     text-transform: uppercase;
     position: relative;
     left: 30%;
-    top: 10%;
+    top: 0%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .page4 {
     width: 100%;
     height: 100%;
+    background: #B48181;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
 .page4 span {
@@ -341,8 +376,9 @@ h5 {
     margin: auto;
     width: 30px;
     height: 30px;
+    position: relative;
     border-radius: 50%;
-    border: solid 2px #aaa;
+    border: solid 2px #9d1a1a;
     transition: all ease 0.3s;
 
 }
@@ -361,7 +397,7 @@ h5 {
     text-align: center;
     color: #aaa;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 5px;
     cursor: pointer;
     font-weight: 700;
     transition: all ease 0.2s;
@@ -467,6 +503,12 @@ h5 {
     display: block;
 }
 
+.page5 {
+    width: 100%;
+    height: 100%;
+    background: #B48181;
+}
+
 @keyframes FadeInUp {
     0% {
         transform: translateY(15px);
@@ -535,8 +577,10 @@ h5 {
     .nav .menu a {
         display: none;
     }
-    body{
-        overflow-x:hidden;
+
+    body {
+        overflow-x: hidden;
+    }
 
     .menu1 {
         display: flex;
@@ -548,21 +592,24 @@ h5 {
         left: 8vw;
         text-align: center;
         transform: translateX(40%);
+        display: none;
     }
 
     .info {
         position: absolute;
-        bottom: 2%;
-        top: 73%;
+        bottom: 8%;
+        top: 70%;
+
         margin-left: 1vw;
-        padding: 0px 0px 0px 4vw;
-        width: 80%;
+        padding: 0px 10px;
+        width: 100%;
         height: 40%;
-        font-size: 3vw;
-        font-weight: 900;
+        font-size: 2.5vw;
+        font-weight: 700;
 
     }
-           .menu i {
+
+    .menu i {
         display: flex;
         color: #fff;
         cursor: pointer;
@@ -583,8 +630,9 @@ h5 {
     }
 
     h5 {
-        font-size: 4vw;
-        color:orange;
+        font-size: 4.5vw;
+        bottom: 10%;
+        color: #e9651e;
 
     }
 
@@ -610,18 +658,13 @@ h5 {
     .skillbox:hover {
         transform: translateY(5vh);
     }
-    .page3{
-        height:30%;
-        
-    }  
-        
-    #progress-bar-container li .step-inner {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        font-size: 10px;
+
+    .page3 {
+        height: 30%;
+
     }
-.page4 h1 {
+
+    .page4 h1 {
         color: #333;
         font-weight: 700;
         position: relative;
@@ -631,7 +674,9 @@ h5 {
         letter-spacing: 4px;
         line-height: 23px;
     }
-            #progress-bar-container li .step-inner {
+
+
+    #progress-bar-container li .step-inner {
         position: absolute;
         width: 100%;
         bottom: 0;
@@ -657,7 +702,7 @@ h5 {
     .step-inner {
         color: #fff;
     }
-        
+
     .box1 {
         height: 100px;
         width: 200px;
@@ -667,7 +712,7 @@ h5 {
     .box2 {
         height: 100px;
         width: 200px;
-        top: 30%;
+        top: 40%;
         left: 18%;
     }
 
@@ -682,5 +727,6 @@ h5 {
         height: 100px;
         width: 200px;
         right: 15%;
+        bottom: 25%;
     }
 }
