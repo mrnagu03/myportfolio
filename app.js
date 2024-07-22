@@ -5,6 +5,7 @@ let menu = document.querySelector(".menu1");
 let creat = document.querySelector(".crate");
 let logo = document.querySelector(".logo");
 let info = document.querySelector(".info");
+let mesg = document.querySelector(".bottom");
 
 let background = document.querySelector("#main");
 img.addEventListener("mouseenter", () => {
@@ -15,7 +16,7 @@ img.addEventListener("mouseenter", () => {
     logo.style.backgroundImage = "url(logo2.jpg)";
     logo.style.transition = "0.5s";
     background.style.transition = "0.5s";
-
+     mesg.style.display = "none";
     creat.style.color = "black";
     menu.style.color = "black";
 
