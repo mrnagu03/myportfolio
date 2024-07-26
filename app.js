@@ -7,6 +7,7 @@ let creat = document.querySelector(".crate");
 let logo = document.querySelector(".logo");
 let info = document.querySelector(".info");
 let mesg = document.querySelector(".bottom");
+let nava = document.querySelectorAll(".nav .menu a");
 
 let background = document.querySelector("#main");
 img.addEventListener("mouseenter", () => {
@@ -20,6 +21,7 @@ img.addEventListener("mouseenter", () => {
     mesg.style.display = "none";
     creat.style.color = "black";
     menu.style.color = "black";
+    nava.style.color = "black";
 
 
 })
@@ -34,6 +36,7 @@ img.addEventListener("mouseleave", () => {
     mesg.style.display = "inline";
     background.style.transition = "0.5s";
     menu.style.color = "#ffff";
+    nava.style.color = "#ffff";
 
 })
 
@@ -76,13 +79,14 @@ gsap.to(".page3 .text2", {
         trigger: ".page3",
         scroller: "body",
         start: "top 0%",
-        end: "top -10%",
+        end: "top -20%",
         pin: true,
         scrub: 2,
 
 
     }
 })
+
 
 gsap.from(".box1", {
     dealy: 0.4,
@@ -97,6 +101,21 @@ gsap.from(".box1", {
 
         scrub: 1
     }
+})
+gsap.from(".name", {
+    x: -300,
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    stagger: 0.4
+})
+
+gsap.from(".port", {
+    x: 300,
+    opacity: 0,
+    delay: 0.5,
+    duration: 1,
+    stagger: 0.4
 })
 gsap.from(".box2", {
     dealy: 0.4,
