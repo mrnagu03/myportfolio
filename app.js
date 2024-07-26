@@ -76,7 +76,7 @@ gsap.to(".page3 .text2", {
         trigger: ".page3",
         scroller: "body",
         start: "top 0%",
-        end: "top -100%",
+        end: "top -10%",
         pin: true,
         scrub: 2,
 
