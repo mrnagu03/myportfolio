@@ -846,7 +846,7 @@ h5 {
 
     .projectimg1 {
         width: 100%;
-        height: 50%;
+        max-height:50%;
         margin-top: 20px;
         border-radius: 22px;
         border: 1px solid gray;
