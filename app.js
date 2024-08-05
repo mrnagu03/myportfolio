@@ -8,15 +8,17 @@ let logo = document.querySelector(".logo");
 let info = document.querySelector(".info");
 let mesg = document.querySelector(".bottom");
 let nava = document.querySelectorAll(".nav .menu a");
-
+let resumeImage = document.querySelector(".projectimg1");
+let educateImage = document.querySelector(".projectimg2");
+let resumeDetais = document.querySelector("#resume-details");
+let educateDetais = document.querySelector("#educate-details");
 let background = document.querySelector("#main");
 img.addEventListener("mouseenter", () => {
     title.style.color = "rgb(19, 181, 84)";
     portfolio.style.color = "rgb(19, 181, 84)";
     title.style.transition = "0.5s";
     background.style.backgroundColor = "white";
-    logo.style.backgroundImage = "url(logo2.jpg)";
-    logo.style.transition = "0.5s";
+
     background.style.transition = "0.5s";
     mesg.style.display = "none";
     creat.style.color = "black";
@@ -49,15 +51,15 @@ let a5 = document.querySelector(".a5");
 
 let tl = gsap.timeline()
 tl.from(".menu1", {
-    x: 300,
+    x: 500,
     duration: 0.6
 
 })
 tl.from(".menu1 a", {
     x: 150,
-    duration: 0.3,
+    duration: 0.2,
     opacity: 0,
-    stagger: 0.2
+    stagger: 0.1
 })
 tl.pause();
 
@@ -79,9 +81,9 @@ gsap.to(".page3 .text2", {
         trigger: ".page3",
         scroller: "body",
         start: "top 0%",
-        end: "top -20%",
+        end: "top -30%",
         pin: true,
-        scrub: 2,
+        scrub: 1,
 
 
     }
@@ -91,7 +93,7 @@ gsap.to(".page3 .text2", {
 gsap.from(".box1", {
     dealy: 0.4,
 
-    duration: 1,
+    duration: 2,
 
     y: -360,
     scrollTrigger: {
@@ -120,7 +122,7 @@ gsap.from(".port", {
 gsap.from(".box2", {
     dealy: 0.4,
 
-    duration: 1,
+    duration: 2,
     x: -60,
     scrollTrigger: {
         trigger: ".box2",
@@ -134,7 +136,7 @@ gsap.from(".box2", {
 gsap.from(".box3", {
     dealy: 0.4,
 
-    duration: 1,
+    duration: 2,
     y: -360,
     scrollTrigger: {
         trigger: ".box3",
@@ -149,7 +151,7 @@ gsap.from(".box3", {
 gsap.from(".box4", {
     dealy: 0.4,
 
-    duration: 1,
+    duration: 2,
     x: 60,
     scrollTrigger: {
         trigger: ".box4",
@@ -194,5 +196,26 @@ $(".step05").click(function () {
     $(".analysis").addClass("active").siblings().removeClass("active");
 });
 
+resumeImage.addEventListener("click", () => {
+    resumeDetais.style.display = "inline-block";
+    educateDetais.style.display = "none";
+    gsap.from(resumeDetais, {
+        opacity: 0,
+        scale: 0,
+        duration: 1
+    })
+})
+educateImage.addEventListener("click", () => {
+    educateDetais.style.display = "inline-block";
+    resumeDetais.style.display = "none";
+    gsap.from(educateDetais, {
+        opacity: 0,
+        scale: 0,
+        duration: 1
+    })
 
+
+
+
+})
 
