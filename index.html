@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyPortfolio</title>
     <link rel="stylesheet" href="img.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="
@@ -20,9 +20,9 @@
                 <div class="menu"><a href="">Home</a>
                     <a href="#skill">Skils</a>
                     <a href="#achievements">Achievements</a>
-                    <a href="">Education</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact</a>
+                    <a href="#project">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
                     <i class="ri-menu-add-line"></i>
 
                 </div>
@@ -30,16 +30,17 @@
                     <a href="" class="a1">Home</a>
                     <a href="#skill" class="a2">Skils</a>
                     <a href="#achievements" class="a3">Achievements</a>
-                    <a href="" class="a4">Education</a>
                     <a href="" class="a4">Projects</a>
-                    <a href="" class="">Contact</a>
+                    <a href="" class="a4">Education</a>
+                    <a href="" class="a5">Contact</a>
                     <i class="ri-close-circle-line"></i>
                 </div>
 
 
             </div>
             <img src="img.jpg" class="photo" alt="">
-            <h1 class="name">Nagaraj Nimbure</h1>
+            <h1 class="name">Nagaraj Nimbure
+            </h1>
             <h2 class="port">portfolio...</h2>
             <div class="full">
                 <h4 class="crate"> created by: </h4>
@@ -59,7 +60,7 @@
                 muted></video>
             <div class="main2">
                 <div class="text">
-                    <span>Skills</span>
+                    Skills
                     <div class="box1"></div>
                     <div class="box2"></div>
                     <div class="box3"></div>
@@ -69,11 +70,13 @@
 
             </div>
         </div>
-        <div class="page3" id="achievements">
-            <div class="text2">Achievements</div>
+        <div class="page3">
+            <div class="text2">
+                Achievements
+            </div>
 
         </div>
-        <div class="page4">
+        <div class="page4" id="achievements">
             <h1>My <span>Achievements</span></h1>
             <br>
             <div class="process-wrapper">
@@ -164,31 +167,122 @@
                 </div>
             </div>
         </div>
-        <div class="page5">
+        <div class="page5" id="project">
             <div class="page5left">
                 <div class="projectimg1"></div>
                 <div class="projectimg2"></div>
             </div>
             <div class="page5right">
-                <h1>Projects</h1>
+                <div class="head">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-content">
+                    <div class="contenor">
+                        <p class="content-text">Click On Project <Span>Image..</Span></p>
+                    </div>
+                    <div class="content">
+                        <div class="first-box" id="resume-details">
+                            <p>The Resume Creator web application allows users to create and download professional
+                                resumes. The application provides an intuitive interface for inputting personal,
+                                educational, and professional information. Once the data is entered, users can preview
+                                their resume and download it as a PDF.</p>
+                            <button class="pgbtn">Get Dettails...</button>
+
+                        </div>
+                        <div class="second-box" id="educate-details">
+                            <p>The online educational web application is designed to provide users with a comprehensive
+                                platform for learning a variety of subjects. The application will feature a
+                                user-friendly interface, dynamic content, and interactive features to enhance the
+                                learning experience. The core technologies used for this project are HTML, CSS, and
+                                JavaScript.</p>
+                            <button class="pgbtn">Get Dettails...</button>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+        <div class="page6" id="education">
+            <h1>Education</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name of univesity(or)institute</th>
+                        <th>Board</th>
+                        <th>Result</th>
+                        <th>pass-out year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vishveshwaraya Tecnological Institute</td>
+                        <td>CBSC</td>
+                        <td>80%</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Sai Spoorthi PU college</td>
+                        <td>CBSC</td>
+                        <td>70%</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Arunodaya High School</td>
+                        <td>SSLC</td>
+                        <td>82%</td>
+                        <td>2021</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="page7" id="contact">
+            <h1>CONTACT</h1>
+            <div class="contact-box">
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="post">
+                        <h2>Connect to me</h2>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="2" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
 
 
-    <script src="
+        </div>
+
+        <script src="
     https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
     "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="app.js">
-    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="app.js">
+        </script>
 </body>
 
 </html>
