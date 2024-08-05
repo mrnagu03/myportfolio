@@ -24,12 +24,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "poppins";
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
+    background: #A59DB2;
     scroll-behavior: smooth;
 
 }
@@ -184,21 +186,24 @@ h5 {
 }
 
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
-    width: 100%;
 
+    width: 100%;
+    height: 10%;
     padding: 3vh 4vw;
-    background: transparent;
+    background: black;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: rgb(198, 93, 12);
+    z-index: 99999;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #031D1A;
     background-image: url("logo1.jpg");
@@ -270,7 +275,7 @@ h5 {
 .page2 {
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: #A59DB2;
     position: relative;
 }
 
@@ -299,7 +304,7 @@ h5 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #b48181;
+    background: #A59DB2;
     position: relative;
 
 }
@@ -345,7 +350,7 @@ h5 {
 .page4 {
     width: 100%;
     height: 100vh;
-    background: #B48181;
+    background: #A59DB2;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -368,6 +373,7 @@ h5 {
     width: 90%;
     margin: auto;
     height: 100px;
+    z-index: 0;
     margin-top: 65px;
 }
 
@@ -375,7 +381,7 @@ h5 {
     padding: 0;
     margin: 0;
     padding-top: 15px;
-    z-index: 9999;
+    z-index: 3;
     position: absolute;
     width: 100%;
     margin-top: -40px
@@ -383,7 +389,7 @@ h5 {
 
 #progress-bar-container li:before {
     content: " ";
-    display: block;
+    display: flex;
     margin: auto;
     width: 30px;
     height: 30px;
@@ -589,9 +595,10 @@ h5 {
 .page5 {
     width: 100%;
     height: 100%;
-    background: #00012A;
+    background: #A59DB2;
     position: relative;
     display: flex;
+    border-top: 2px solid #f3f3f3;
 
 }
 
@@ -601,15 +608,20 @@ h5 {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    background: #f3f3f3;
-    border-right: 1px solid black;
+
+    border-right: 2px solid rgb(254, 254, 254);
 }
 
 .page5right {
     width: 60%;
-    height: 100vh;
-    background: #f3f3f3;
+    height: 100%;
+    /* overflow: scroll; */
 
+
+}
+
+.head {
+    width: 100%;
 }
 
 
@@ -625,6 +637,7 @@ h5 {
     background-repeat: no-repeat;
     transition: all ease 0.5s;
     scale: 0.7;
+    cursor: pointer;
 
 
 }
@@ -647,6 +660,7 @@ h5 {
     margin-bottom: 20px;
     transition: all ease 0.5s;
     scale: 0.7;
+    cursor: pointer;
 }
 
 .projectimg2:hover {
@@ -669,20 +683,278 @@ h5 {
 
 }
 
+.project-content {
+    height: 80%;
+    width: 100%;
 
 
-@media screen and (max-width:1023px) {
-    .nav .menu a {
-        display: none;
+
+}
+
+.contenor {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10px;
+
+
+}
+
+.content-text {
+    overflow: hidden;
+    color: #f3f3f3;
+    font-size: 3.6rem;
+    font-weight: 700;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    transition: all ease 0.5s;
+    animation: typing 4s steps(40, end) infinite;
+}
+
+.content-text span {
+    color: #e31919;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
+.first-box {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    margin-top: 10%;
+    overflow: hidden;
+
+    background: #a894c6;
+
+    display: none;
+
+
+}
+
+.second-box {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    margin-top: 10%;
+    background: #a894c6;
+    display: none;
+
+
+}
+
+.pgbtn {
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.pgbtn:hover {
+    box-shadow: 0px 0px 10px rgb(168, 64, 64);
+    background: #000;
+    color: #fff;
+}
+
+.page6 {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.page6 h1 {
+    font-size: 10vw;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    background-image: url("colorfull.jpg");
+    background-clip: text;
+    cursor: pointer;
+
+}
+
+
+table {
+    width: 100%;
+    margin-top: 8vh;
+    border: 1px solid rgb(244, 241, 236);
+    padding: 2%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+thead {
+    width: 100%;
+    border: 1px solid black;
+}
+
+th {
+    height: 6vh;
+    width: 20vw;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+tbody {
+    width: 100%;
+    border: 1px solid black;
+}
+
+td {
+    height: 10vh;
+    width: 20vw;
+    text-align: center;
+}
+
+.page7 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.page7 h1 {
+    font-size: 6vw;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid white;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-image: url("colorfull.jpg");
+    background-clip: text;
+    cursor: pointer;
+
+}
+
+.contact-box {
+    font-family: Arial, sans-serif;
+    background-color: #A59DB2;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.contact-form-container {
+    background-color: #ffffff77;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 20px;
+    max-width: 400px;
+    height: 100%;
+
+    transition: all ease 0.5s;
+}
+
+.contact-form-container:hover {
+    box-shadow: 0px 0px 20px orange;
+
+    transition: all ease 0.5s;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+
+
+
+
+
+
+
+
+@keyframes typing {
+    from {
+        width: 0%;
+
     }
 
-    body {
-        overflow-x: hidden;
+    to {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width:900px) {
+    .nav {
+        position: absolute;
+    }
+
+    .nav .menu a {
+        display: none;
     }
 
     .menu1 {
         display: flex;
         color: aliceblue;
+        height: 500%;
     }
 
     #main .full {
@@ -844,10 +1116,11 @@ h5 {
         background-position: center;
     }
 
+
     .projectimg1 {
         width: 100%;
-        max-height:30%;
-        margin-top: 20px;
+        height: 30%;
+        margin-top: 50px;
         border-radius: 22px;
         border: 1px solid gray;
         background-image: url("resumeformobile.png");
@@ -886,4 +1159,45 @@ h5 {
         transition: all ease 0.5s;
         scale: 1;
     }
+
+    .content-text {
+        overflow: hidden;
+        color: #f3f3f3;
+        font-size: 4vw;
+        font-weight: 700;
+        border-right: 0.15em solid orange;
+
+        transition: all ease 0.5s;
+        animation: none;
+
+    }
+
+    .content {
+        overflow: auto;
+    }
+
+    .project-content {
+        height: 80%;
+        width: 100%;
+        overflow: scroll;
+
+
+    }
+
+    .page6 {
+        padding: 50px;
+        overflow: hidden;
+    }
+
+    table {
+        padding: 0;
+        border: none;
+    }
+
+
+    th {
+        font-size: 2vw;
+    }
+
+
 }
